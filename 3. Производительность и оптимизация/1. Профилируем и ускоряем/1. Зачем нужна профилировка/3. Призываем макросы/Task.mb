@@ -1,0 +1,39 @@
+Задание
+Замените в примере с профилировкой явное объявление переменных на использование макроса LOG_DURATION.
+Ограничения
+Не меняйте поведение программы.
+
+Что отправлять на проверку
+Загрузите в тренажёр решение предыдущей задачи с добавленным макросом LOG_DURATION. Прямое использование 
+LogDuration нужно заменить на использование этого макроса.
+
+Как будет тестироваться ваш код
+Программа будет проверена теми же тестами, что и предыдущая. Дополнительно будет проверено, что вы не используете 
+LogDuration напрямую, а только через макрос.
+
+Пример вывода
+Append random: 5 ms
+Reverse: 5811 ms
+After 1 bits we found 0% pops
+After 2 bits we found 0% pops
+After 4 bits we found 25% pops
+After 8 bits we found 37.5% pops
+After 16 bits we found 50% pops
+After 32 bits we found 50% pops
+After 64 bits we found 54.6875% pops
+After 128 bits we found 53.9063% pops
+After 256 bits we found 53.5156% pops
+After 512 bits we found 51.7578% pops
+After 1024 bits we found 51.9531% pops
+After 2048 bits we found 50.4395% pops
+After 4096 bits we found 49.585% pops
+After 8192 bits we found 49.7681% pops
+After 16384 bits we found 49.3469% pops
+After 32768 bits we found 49.5178% pops
+After 65536 bits we found 49.6353% pops
+After 131072 bits we found 50% pops
+Counting: 8 ms
+Total: 5828 ms 
+
+Подсказка 
+Добавьте макрос в h-файл. В cpp-файле уже не нужно использовать класс LogDuration напрямую.
