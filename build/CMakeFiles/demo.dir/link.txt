@@ -1,0 +1,1 @@
+/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/demo.dir/link.d CMakeFiles/demo.dir/main.cpp.o -o demo

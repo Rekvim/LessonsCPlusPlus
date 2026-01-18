@@ -1,0 +1,3 @@
+/data/GitGub/Lessons-C-/build/CMakeFiles/demo.dir
+/data/GitGub/Lessons-C-/build/CMakeFiles/edit_cache.dir
+/data/GitGub/Lessons-C-/build/CMakeFiles/rebuild_cache.dir

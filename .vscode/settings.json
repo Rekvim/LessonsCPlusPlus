@@ -10,5 +10,9 @@
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"
         }
+    ],
+    "clangd.arguments": [
+        "--compile-commands-dir=build",
+        "--clang-tidy"
     ]
 }

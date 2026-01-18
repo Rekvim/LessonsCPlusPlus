@@ -1,0 +1,261 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+/* ===== Base (screen + pdf) ===== */
+.markdown-preview {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1f2937;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2.2rem 2.0rem;
+}
+
+.markdown-preview .callout {
+  margin: 1.4rem 0;
+  padding: 1.1rem 1.2rem;
+  border-radius: 14px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.markdown-preview .callout-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-preview .callout-body {
+  color: #374151;
+}
+
+.markdown-preview .callout.info {
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+}
+
+/* Caption under images */
+.markdown-preview .caption {
+  margin-top: 0.55rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.95em;
+  color: #4b5563;
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* Make images centered & neat */
+.markdown-preview img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.0rem auto 0;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Better typography */
+.markdown-preview p,
+.markdown-preview li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.markdown-preview p {
+  text-indent: 1.5rem;
+  margin: 0.4em 0;
+}
+
+.markdown-preview p + p {
+  margin-top: 0;
+}
+
+.markdown-preview h1 + p,
+.markdown-preview h2 + p,
+.markdown-preview h3 + p {
+  text-indent: 1.5em;
+}
+
+.markdown-preview blockquote p,
+.markdown-preview .note p,
+.markdown-preview .warning p,
+.markdown-preview .task p {
+  text-indent: 0;
+}
+
+.markdown-preview li p {
+  text-indent: 0;
+}
+
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  padding-left: 1.5rem; 
+  line-height: 1.25;
+  margin: 2.2rem 0 1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.markdown-preview h1 {
+  font-size: 2.1rem;
+  margin-top: 0.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.markdown-preview h2 {
+  font-size: 1.55rem;
+  padding-top: 0.4rem;
+}
+
+.markdown-preview h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Links */
+.markdown-preview a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px dotted #2563eb;
+}
+.markdown-preview a:hover {
+  color: #1e40af;
+  border-bottom-style: solid;
+}
+
+/* Lists */
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 1.4rem;
+  margin: 0.9rem 0 1.1rem;
+}
+.markdown-preview li {
+  margin: 0.35rem 0;
+}
+
+/* Inline code */
+.markdown-preview code {
+  font-family: 'Source Code Pro', Consolas, monospace;
+  background: #eef2ff;
+  padding: 0.12em 0.32em;
+  border-radius: 6px;
+}
+
+/* Code blocks */
+.markdown-preview pre {
+  background: #f7f9fb;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #4f46e5;
+  border-radius: 10px;
+  padding: 1.1em 1.2em;
+  overflow-x: auto;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.markdown-preview pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.80em;
+  line-height: 1.6;
+}
+
+/* Quotes */
+.markdown-preview blockquote {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #d1d5db;
+  background: #f9fafb;
+  border-radius: 8px;
+  color: #374151;
+}
+
+.markdown-preview blockquote {
+  margin: 1.1rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #22c55e;
+  background: #f0fdf4;
+  border-radius: 10px;
+}
+
+/* Custom callouts you can use in markdown via HTML */
+.markdown-preview .note,
+.markdown-preview .warning,
+.markdown-preview .task {
+  margin: 1.2rem 0;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.markdown-preview :not(pre) > code {
+  background: rgba(79, 70, 229, 0.10);
+  padding: 0.06em 0.22em;
+  border-radius: 6px;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.markdown-preview .warning {
+  background: #fff7ed;
+  border-left: 4px solid #f97316;
+}
+
+.markdown-preview .task {
+  background: #f0fdf4;
+  border-left: 4px solid #22c55e;
+}
+
+/* Tables (optional but nice) */
+.markdown-preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2rem 0;
+  font-size: 0.98em;
+}
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid #e5e7eb;
+  padding: 0.55rem 0.65rem;
+  vertical-align: top;
+}
+.markdown-preview th {
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+/* ===== Print / PDF tweaks ===== */
+@media print {
+  .markdown-preview {
+    max-width: none;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #111;
+  }
+
+  .markdown-preview a {
+    color: #111;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  .markdown-preview pre {
+    page-break-inside: avoid;
+  }
+
+  .markdown-preview h1,
+  .markdown-preview h2,
+  .markdown-preview h3 {
+    page-break-after: avoid;
+  }
+}
