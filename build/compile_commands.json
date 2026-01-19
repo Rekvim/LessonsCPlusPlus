@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/data/GitGub/Lessons-C-/build",
-  "command": "/usr/sbin/c++   -std=gnu++20 -o CMakeFiles/demo.dir/main.cpp.o -c /data/GitGub/Lessons-C-/main.cpp",
-  "file": "/data/GitGub/Lessons-C-/main.cpp",
-  "output": "CMakeFiles/demo.dir/main.cpp.o"
-}
-]
